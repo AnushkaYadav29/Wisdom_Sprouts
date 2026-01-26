@@ -38,7 +38,6 @@
 .about {
     padding: 40px;
     text-align: center;
-    background: white;
 }
 
 .about h2 {
@@ -81,6 +80,24 @@
 
 .images img:hover {
     transform: scale(1.05);
+}
+
+/* Facts Section */
+.facts {
+    padding: 40px;
+    text-align: center;
+}
+
+.facts h2 {
+    color: #138808;
+    margin-bottom: 15px;
+}
+
+.facts ul {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+    font-size: 18px;
 }
 
 /* Quote Section */

@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Top Strip */
+.top-strip {
+    background: #fff4e5;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.top-strip span {
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+/* Navbar */
+header {
+    background: #ffffff;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 60px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    height: 90vh;
+}
+
+.hero-left {
+    width: 50%;
+    background: #e6f5f7;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.small-text {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.hero-left h1 {
+    font-size: 48px;
+    color: #102a43;
+    margin-bottom: 30px;
+}
+
+.hero-left button {
+    background: #0a2540;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    width: fit-content;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-left button:hover {
+    background: #163b66;
+}
+
+/* Hero Right */
+.hero-right {
+    width: 50%;
+}
+
+.hero-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Second Section */
+.second-section {
+    display: flex;
+    background-color: #fff7ec;
+    padding: 90px 80px;
+    align-items: center;
+}
+
+/* Left Content */
+.second-left {
+    width: 40%;
+}
+
+.second-left h2 {
+    font-size: 48px;
+    color: #102a43;
+    margin-bottom: 20px;
+}
+
+.second-left p {
+    font-size: 18px;
+    color: #334e68;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.quiz-btn {
+    display: inline-block;
+    background-color: #0a2540;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.quiz-btn:hover {
+    background-color: #163b66;
+}
+
+/* Right Image */
+.second-right {
+    width: 60%;
+    text-align: center;
+}
+
+.second-right img {
+    width: 80%;
+    max-width: 620px;
+    border-radius: 18px;
+}
+
+/* Section background */
+.brands-section {
+    background-color: #fff7ec;
+    padding: 90px 70px;
+}
+
+/* One-line row */
+.brands-row {
+    display: flex;
+    flex-wrap: nowrap;         
+    gap: 30px;
+}
+
+/* Each image card */
+.brand-card {
+    flex: 0 0 25%;              
+    height: 380px;
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Image styling */
+.brand-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Hover effect */
+.brand-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+.brand-card:hover img {
+    transform: scale(1.08);
+}
+
+.store-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 30px 50px;
+            margin: 50px auto;
+            max-width: 900px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .store-section h2 {
+            font-size: 28px;
+            color: #0B1D4A; 
+            margin: 0;
+        }
+
+        .store-section button {
+            background-color: #0B1D4A; 
+            color: #ffffff;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .store-section button:hover {
+            background-color: #132F6B;
+        }
+
+        .store-section button::after {
+            content: "→";
+            margin-left: 8px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .store-section {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+        }
+
+
+
+
+        /* Hero Section */
+.hero {
+    display: flex;
+    height: calc(100vh - 120px);
+    background: #2f4f3e;
+    border-radius: 30px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+/* Left Image */
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right Content */
+.hero-content {
+    flex: 1;
+    padding: 80px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 35px;
+    max-width: 420px;
+}
+
+.hero-content button {
+    width: fit-content;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #ffffff;
+    color: #1f3d2b;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hero-content button:hover {
+    background: #eaeaea;
+}
+
+
+
+
+/* Brands Section */
+.brands-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 120px;
+    background-color: #fff7ea;
+}
+
+/* Left Content */
+.brands-content {
+    max-width: 500px;
+}
+
+.small-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0a2a5c;
+}
+
+.brands-content h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    color: #0a2a5c;
+    margin-bottom: 25px;
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 35px;
+}
+
+/* Button */
+.brands-btn {
+    background-color: #0a2a5c;
+    color: white;
+    border: none;
+    padding: 16px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.brands-btn:hover {
+    background-color: #081f44;
+}
+
+/* Right Image */
+.brands-image img {
+    max-width: 600px;
+    width: 100%;
+}
+
+
+
+
+/* WAVE IMAGE SECTION */
+.wave-section {
+    width: 100%;
+    height: 320px;                 /* adjust if needed */
+    background-image: url("./assets/ninth.png");
+    background-repeat: repeat-x;   /* repeats horizontally */
+    background-position: center;
+    background-size: contain;      /* keeps image HD */
+}
+
+
+
+
+/* FOOTER */
+.footer {
+    background-color: #02204d;
+    color: white;
+    padding: 80px 8%;
+}
+
+.footer-top {
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    width: 120px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer hr {
+    border: 0.5px solid #00c4d6;
+    margin: 30px 0;
+}
+
+/* BOTTOM */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-left {
+    display: flex;
+    gap: 25px;
+}
+
+.bottom-left a {
+    color: #00c4d6;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.bottom-right {
+    font-size: 14px;
+}
