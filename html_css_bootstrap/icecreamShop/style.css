@@ -19,33 +19,52 @@
 }
 
 /* Navbar */
-header {
-    background: #ffffff;
-    padding: 15px 0;
+
+.main-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
 }
 
+/* NAVBAR */
 .navbar {
+    height: 80px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff7ea;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
-    margin: auto;
+    padding: 0 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.navbar ul {
+/* NAV LISTS */
+.nav-left,
+.nav-right {
     display: flex;
     list-style: none;
+    gap: 25px;
 }
 
 .navbar li {
-    margin: 0 15px;
     font-weight: 600;
+    color: #0a2a5c;
     cursor: pointer;
 }
 
+/* LOGO */
 .logo img {
-    width: 60px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+
 
 /* Hero Section */
 .hero {
@@ -431,4 +450,31 @@ header {
 
 .bottom-right {
     font-size: 14px;
+}
+
+
+
+.gotToTop{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius:50%;
+    padding-left: 6px;
+    padding-top: 6px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.gotToTop:hover{
+    box-shadow: 2px 2px 2px 1px black;
+    background-color: black;
+}
+.gotToTop a{
+    color: black;
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+.gotToTop a:hover{
+    color: white;
 }
