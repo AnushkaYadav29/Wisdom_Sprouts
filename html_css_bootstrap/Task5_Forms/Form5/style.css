@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* background: linear-gradient(to right rgb(61,107,59)) */
+    /* background-color: linear-gradient(to right rgb(50, 111, 64),rgb(120 ,141,32)); */
+    /* background-color: rgb(150, 188, 55); */
+    background: linear-gradient(to right, #21511c, rgb(120 ,141,32));
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    align-content: center;
+    width: 800px;
+    height: 500px;
+    background-color: aliceblue;
+    border-radius: 30px;
+   
+    
+    display: flex;
+}
+
+.left-content{
+    flex: 1;
+    /* border-radius: 30px; */
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background-color:rgba(0,72,84);
+    border: transparent;
+    padding:20px;
+    align-content: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.right-form{
+flex: 1;
+padding: 20px 20px;
+margin-top: 40px;
+}
+
+.left-content h2{
+    font-weight: bold;
+    align-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+.left-content p{
+    align-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.btn{
+    padding: 8px 30px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    margin-top: 35px;
+    margin-left:35%;
+}
+
+.right-form h1{
+    font-weight: bold;
+    align-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+.icon{
+    align-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-left: 23%;  
+}
+
+.icon-br{
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-left: 7px;
+    padding: 5px 5px;
+    color: rgb(13, 125, 184);
+
+
+}
+
+.right-form h2{
+    font-weight: bold;
+    align-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-left: 35%;
+    font-size: 40px;
+}
+
+.right-form p{
+    font-size: 18px;
+    align-content: center;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input{
+    margin-top: 5px;
+    padding: 8px 65px;
+    margin-left: 20px;
+    background-color: rgb(207, 203, 203);
+    border: transparent;
+}
+
+.btn-form{
+
+    padding: 8px 30px;
+    background-color:rgb(150, 188, 55);
+    border: transparent;
+    color: white;
+    margin-left:33%;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
