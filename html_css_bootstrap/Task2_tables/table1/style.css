@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1e5f73;
+}
+
+/* Title */
+.main-title {
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+/* Card */
+.card {
+    width: 230px;
+    background: transparent;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* Card Header */
+.card h2 {
+    text-align: center;
+    color: white;
+    padding: 18px;
+    font-size: 20px;
+}
+
+/* Header Colors */
+.fruits h2 {
+    background-color: #6aa84f;
+}
+
+.vegetables h2 {
+    background-color: #6d5cae;
+}
+
+.groceries h2 {
+    background-color: #b85450;
+}
+
+/* List Box */
+.list-box {
+    background-color: #f2f2f2;
+    padding: 30px 45px;
+}
+
+/* Lists */
+ol, ul {
+    font-size: 18px;
+}
+
+.square {
+    list-style-type: square;
+}
+
+.circle {
+    list-style-type: disc;
+}
+
+/* List Items */
+li {
+    margin-bottom: 20px;
+}

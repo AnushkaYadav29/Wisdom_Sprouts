@@ -1,0 +1,53 @@
+body {
+    font-family: "Times New Roman", serif;
+    background: #ffffff;
+}
+
+/* main table */
+.main-table {
+    width: 850px;
+    margin: 40px auto;
+    border: 3px double #000;
+    border-collapse: separate;
+    border-spacing: 6px;
+}
+
+.heading {
+    background: #1fa3b0;
+    font-size: 22px;
+    padding: 10px;
+    border: 2px solid #000;
+    text-align: center;
+}
+
+.main-table td {
+    font-size: 20px;
+    padding: 14px;
+    border: 2px solid #000;
+    vertical-align: middle;
+}
+
+/* specifications inner table */
+.spec-cell {
+    padding: 6px;
+}
+
+.spec-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+
+.spec-table th,
+.spec-table td {
+    border: 2px solid #000;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* model / storage header */
+.sub-head {
+    background: #f0c36a;
+    font-weight: bold;
+    text-align: center;
+}
