@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d1dbe6;
+}
+
+/* MAIN CONTAINER */
+.main-container {
+    width: 100%;
+    padding: 200px 8%;
+    
+    border: transparent;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* LEFT SIDE */
+.hero-left {
+    width: 50%;
+}
+
+.script {
+    font-family: 'Pacifico', cursive;
+    font-size: 100px;
+    color: #2b7dbf;
+}
+
+.hero-left h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.primary {
+    background: #2b7dbf;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+}
+
+
+.play {
+    width: 35px;
+    height: 35px;
+    background: #2b7dbf;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* RIGHT SIDE */
+.hero-right {
+    margin-top: 80px;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BLUE BACKGROUND CARD */
+.blue-card {
+    width: 350px;
+    height: 210px;
+    background: linear-gradient(135deg, #2b7dbf, #1f5fa0);
+    border-radius: 25px;
+    transform: skewX(-12deg);
+}
+
+/* GIRL IMAGE */
+.girl {
+    position: absolute;
+    top: -60px;
+    width: 500px;
+}
+
+/* STATS BELOW IMAGE */
+.stats {
+    margin-top: 70px;
+    display: flex;
+    gap: 25px;
+}
+
+.stat-box {
+    background: #2b7dbf;
+    color: white;
+    padding: 18px 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.stat-box span {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 5px;
+}

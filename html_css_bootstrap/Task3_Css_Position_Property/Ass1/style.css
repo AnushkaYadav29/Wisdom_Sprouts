@@ -1,0 +1,56 @@
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container for absolute positioning */
+        .container {
+            position: relative;
+            height: 500px;
+            border: 2px solid black;
+            margin: 30px;
+        }
+
+        /* Common styling */
+        .box {
+            width: 180px;
+            height: 120px;
+            color: white;
+            text-align: center;
+            line-height: 120px;
+            font-weight: bold;
+        }
+
+        /* 1. Static */
+        .box1 {
+            position: static;
+            background-color: red;
+        }
+
+        /* 2. Relative */
+        .box2 {
+            position: relative;
+            top: -60px;   /* Moves upward */
+            left: 80px;
+            background-color: blue;
+            z-index: 2;   /* Overlaps Box1 */
+        }
+
+        /* 3. Absolute */
+        .box3 {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            background-color: green;
+            z-index: 1;
+        }
+
+        /* 4. Fixed */
+        .box4 {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: purple;
+        }
+
+        
