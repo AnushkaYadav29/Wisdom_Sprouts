@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+    
+
+        .red{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            transition: all 0.3s ease-in;
+        }
+
+        .red:hover{
+            transform: translate(25px,50px) scale(1.2) rotate(20deg) skew(20deg);
+            /* transform:skewX(-50deg); */
+            /* transform: skewX(45deg); */
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="red">AAA</div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box{
+    width: 150px;
+    height: 150px;
+    background: purple;
+    transition: transform 0.4s ease;
+}
+
+.box:hover{
+    transform: scale(1.2);
+}
+
+.btn{
+    padding: 12px 30px;
+    border: none;
+    background: #1db954;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: 0.4s ease;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background: #19a64c;
+}
+
+@keyframes move{
+    0%{ transform: translateX(0); }
+    50%{ transform: translateX(200px); }
+    100%{ transform: translateX(0); }
+}
+
+.box{
+    animation: move 2s infinite;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+<button class="btn">Hover Me</button>
+
+
+</body>
+</html>
