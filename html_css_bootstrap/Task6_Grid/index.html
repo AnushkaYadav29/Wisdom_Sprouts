@@ -1,4 +1,4 @@
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -172,5 +172,66 @@
         <div class="gridItem5 box"></div>
         <div class="gridItem6 box"></div>
     </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        
+
+         .gridContainerFruit{
+            display: grid;
+        } 
+
+        .grapes{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(42, 24, 56);
+        }
+        
+
+        .strawberry{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(104, 15, 43);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="gridContainerFruit">
+        <div class="grapes"></div>
+        <div class="strawberry"></div>
+        <div class="watermelon"></div>
+        <div class="orange"></div>
+        <div class="papaya"></div>
+        <div class="pineapple"></div>
+    </div>
+
+
+
+    <!-- <div class="containerOne">
+        <div class="gridItem1 box"></div>
+        <div class="gridItem2 box"></div>
+        <div class="gridItem3 box"></div>
+        <div class="gridItem4 box"></div>
+        <div class="gridItem5 box"></div>
+        <div class="gridItem6 box"></div>
+    </div> -->
 </body>
 </html>

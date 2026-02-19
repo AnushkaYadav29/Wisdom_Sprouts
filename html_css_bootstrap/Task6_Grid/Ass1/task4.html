@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .dashboard {
+            display: grid;
+            height: 100vh;
+            grid-template-areas:
+                "header header header"
+                "nav main aside"
+                "footer footer footer";
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 70px 1fr 60px;
+            gap: 10px;
+        }
+
+        header {
+            grid-area: header;
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            grid-area: nav;
+            background: #4CAF50;
+            padding: 20px;
+            color: white;
+        }
+
+        main {
+            grid-area: main;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        aside {
+            grid-area: aside;
+            background: #ddd;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dashboard">
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <main>Main Content</main>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+</div>
+
+</body>
+</html>
