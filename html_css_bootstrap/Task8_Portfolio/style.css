@@ -1,3 +1,107 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    background-color: rgb(208, 209, 215);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main content spacing (important for fixed navbar) */
+.main-content{
+    margin-top: 100px;
+}
+
+/* About Section */
+#about{
+    margin-bottom: 40px;
+}
+
+#about h2{
+    margin-bottom: 20px;
+}
+
+#about p{
+    font-size: 18px;
+    color: rgb(58, 55, 55);
+}
+
+/* Project Section */
+.project-heading{
+    margin-bottom: 20px;
+}
+
+.project-card{
+    background-color: white;
+    border-left: 6px solid rgb(43, 117, 170);
+    padding: 20px;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+.project-card h2{
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+#contact{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#contact h1{
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer{
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
 *{
     margin: 0px;
     padding: 0px;
@@ -139,4 +243,4 @@ form input{
 
 
 
-
+ */

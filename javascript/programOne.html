@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Addition <span class="add"></span></p>
+
+    <input type="text" name="name" id="userName">
+    <script>
+        n1=prompt("Enter one")
+        n2=prompt("Enter two")
+        document.getElementById('add').textContent=Number(n1)+Number(n2)
+    </script>
+
+    <script>
+        function getuser(){
+            userN=document.getElementById('userName').value
+        }
+    </script>
+
+
+
+
+    <script src="./programOne.js"></script>
+</body>
+</html>
