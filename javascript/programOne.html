@@ -6,20 +6,62 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Addition <span class="add"></span></p>
 
-    <input type="text" name="name" id="userName">
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <p id="para3"></p>
+
+    <p>Addition : <span id="add"></span></p>
+    <p>Subtraction : <span id="subtract"></span></p>
+    <p>Multiply : <span id="multiply"></span></p>
+    <p>Division : <span id="division"></span></p>
+
+    <button onclick="alertMsg()">click me</button>
+
+    <input type="text" id="userName">
+    <button onclick="getuser()">Get User Name</button>
+
+    <div id="greet"></div>
+
+
+
     <script>
+        console.log('hello world')
+        document.getElementById('para1').innerHTML="This is first Paragraph"
+        document.getElementById('para2').textContent="This is second Paragraph"
+        document.querySelector('#para3').textContent="This is third para"
+        document.write("This is fourth para")
+    </script>
+
+
+    
+    <script>
+        // Prompt is used to take input
         n1=prompt("Enter one")
         n2=prompt("Enter two")
-        document.getElementById('add').textContent=Number(n1)+Number(n2)
+        document.getElementById('add').textContent=Number(n1) + Number(n2)
+        document.getElementById('subtract').textContent=Number(n1) - Number(n2)
+        document.getElementById('multiply').textContent=Number(n1) * Number(n2)
+        document.getElementById('division').textContent=Number(n1) / Number(n2)
+    </script>
+
+
+<!-- Function in Javascript -->
+
+    <script>
+        function alertMsg(){
+            document.write("This is an alert msg")
+            // alert('This is the alert msg')
+        }
     </script>
 
     <script>
         function getuser(){
             userN=document.getElementById('userName').value
+            document.querySelector('#greet').innerHTML='Welcome '+userN
         }
     </script>
+
 
 
 
