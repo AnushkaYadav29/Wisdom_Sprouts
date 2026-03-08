@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Electric Vibe Music Festival</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#0d0f2d,#1a1c4d);
+color:white;
+text-align:center;
+}
+
+/* HEADER */
+
+.header{
+background:#ff0f5a;
+padding:15px;
+font-size:22px;
+font-weight:600;
+}
+
+/* EQUALIZER */
+
+.equalizer{
+display:flex;
+justify-content:center;
+align-items:flex-end;
+gap:6px;
+margin:30px 0;
+}
+
+.equalizer div{
+width:6px;
+height:20px;
+background:#00ff88;
+animation:music 1s infinite ease-in-out;
+}
+
+.equalizer div:nth-child(2){animation-delay:0.2s;}
+.equalizer div:nth-child(3){animation-delay:0.4s;}
+.equalizer div:nth-child(4){animation-delay:0.6s;}
+.equalizer div:nth-child(5){animation-delay:0.8s;}
+
+@keyframes music{
+
+0%{height:10px;}
+50%{height:35px;}
+100%{height:10px;}
+
+}
+
+/* Artist Buttons */
+
+.artist-btn{
+border:1px solid #ff0f5a;
+color:white;
+background:transparent;
+}
+
+.artist-btn:hover{
+background:#ff0f5a;
+color:white;
+}
+
+/* Ticket Cards */
+
+.ticket-card{
+background:transparent;
+border:1px solid rgba(255,255,255,0.4);
+border-radius:10px;
+}
+
+.buy-btn{
+background:red;
+border:none;
+}
+
+/* Live Button */
+
+.live-btn{
+background:red;
+animation:glow 1s infinite alternate;
+}
+
+@keyframes glow{
+
+from{box-shadow:0 0 5px red;}
+to{box-shadow:0 0 20px red;}
+
+}
+
+/* Accordion */
+
+.accordion-button{
+background:#10123a;
+color:white;
+}
+
+.accordion-body{
+background:#10123a;
+color:white;
+}
+
+
+.ticket-card h5{
+color:white;
+font-weight:600;
+}
+
+.ticket-card p{
+color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+🔥 Electric Vibe Music Festival 2025 🔥
+</div>
+
+
+<!-- EQUALIZER -->
+<div class="equalizer">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+
+
+<!-- ARTISTS -->
+<div class="container mb-5">
+
+<div class="row justify-content-center g-3">
+
+<div class="col-md-auto col-10">
+<button class="btn artist-btn w-100">DJ Nova</button>
+</div>
+
+<div class="col-md-auto col-10">
+<button class="btn artist-btn w-100">Electric Beats</button>
+</div>
+
+<div class="col-md-auto col-10">
+<button class="btn artist-btn w-100">SynthStorm</button>
+</div>
+
+<div class="col-md-auto col-10">
+<button class="btn artist-btn w-100">Lunar Bass</button>
+</div>
+
+<div class="col-md-auto col-10">
+<button class="btn artist-btn w-100">GlowRiders</button>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- TICKETS -->
+
+<div class="container mb-5">
+
+<div class="row justify-content-center g-4">
+
+<div class="col-md-3 col-10">
+
+<div class="card ticket-card text-center p-3">
+
+<h5>Standard</h5>
+<p>$49</p>
+
+<button class="btn buy-btn text-white">Buy Now</button>
+
+</div>
+
+</div>
+
+
+<div class="col-md-3 col-10">
+
+<div class="card ticket-card text-center p-3">
+
+<h5>VIP</h5>
+<p>$99</p>
+
+<button class="btn buy-btn text-white">Buy Now</button>
+
+</div>
+
+</div>
+
+
+<div class="col-md-3 col-10">
+
+<div class="card ticket-card text-center p-3">
+
+<h5>Backstage</h5>
+<p>$149</p>
+
+<button class="btn live-btn text-white">Live Now</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- RULES ACCORDION -->
+
+<div class="container">
+
+<div class="accordion" id="festivalRules">
+
+<div class="accordion-item border-0">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#rule1">
+
+No Outside Food
+
+</button>
+
+</h2>
+
+<div id="rule1" class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+Outside food and beverages are not allowed inside the festival area.
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="accordion-item border-0">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#rule2">
+
+Re-entry Policy
+
+</button>
+
+</h2>
+
+<div id="rule2" class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+No re-entry allowed once you've exited the festival grounds.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
